@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Submit{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+      <label for="message">Your message:</label>
+      <br>
+      <input type="text" name="message" id="message">
+      <br>
+      <label for="handle">Your name or handle:</label>
+      <input type="text" name="handle" id="handle">
+      <br>
+      <input type="submit" value="Submit message">
+  </form>
+
+  {% if success %}
+    <br>
+    Thanks for submitting a message!
+  {% endif %}
+
+  {% if error %}
+    <br>
+    Please fill in both blanks. 
+  {% endif %}
+  
+{% endblock %}

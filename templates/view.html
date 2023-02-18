@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Some Cool Messages{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+
+{% if fetched_messages %}
+  {% for m in fetched_messages %}
+    <br>
+    {{ m[1] }}
+    <br>
+    <i>- {{ m[0] }}</i>
+    <br>
+  {% endfor %}
+
+{% else %} No messages yet! 
+{% endif %}
+
+{% endblock %}

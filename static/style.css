@@ -1,0 +1,21 @@
+html {
+    font-family: Times New Roman;
+    background-color: Beige;
+    padding: 1rem;
+}
+
+h1 {
+    color: Maroon;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-size: 23px;
+}
+
+a {
+    color: MidnightBlue;
+    text-decoration: none;
+}
